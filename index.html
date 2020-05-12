@@ -1,0 +1,48 @@
+<!--
+    Programação Web
+    Prof. Orlewilson Maia
+    Aluno (a): seu nome (digite seu nome:))
+    Data: 30/04/2020
+    Descrição: Página para cadastro de informações.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Auxílio Emergencial</title>
+        <!--importando o Estilo-->
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <!--importando o JavaScript-->
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <img src="logo.jpg"></img> 
+        <p id="titulo">Cadastro de Auxílio Emergencial</p>
+        <form>
+            <label id="nome" class="item-formulario">Nome:</label>
+            <br>
+               <input type="text" onchange="this.setCustomValidity('')" id="campoNome" name="campoNome"/> 
+            </br>
+            <label id="cpf" class="item-formulario">CPF:</label>
+            <br>   
+               <input type="text" onchange="this.setCustomValidity('')" pattern="[0-9]{11}" id="campoCpf" name="campoCpf"/> 
+            </br>
+            <label id="contato" class="item-formulario">Contato:</label>  
+            <br>     
+               <input type="text" onchange="this.setCustomValidity('')" id="campoContato" name="campoContato"/> 
+            </br> 
+            <label id="endereco" class="item-formulario">Endereço:</label>
+            <br>    
+                <input type="text" onchange="this.setCustomValidity('')" id="campoEndereco" name="campoEndereco"/> 
+            </br>    
+            <label id="renda" class="item-formulario">Renda R$:</label>    
+            <br>    
+                <input type="text" onchange="this.setCustomValidity('')" pattern="[0-9]*" id="campoRenda" name="campoRenda"/> 
+            </br>     
+        </form>
+        <div>
+        <input type="button" id="btEnviar" 
+            value="Enviar" 
+            onclick="validarCampos()"/>
+        </div>   
+</body>
+</html>

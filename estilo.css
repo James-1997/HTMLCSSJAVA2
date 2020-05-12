@@ -1,0 +1,73 @@
+/*
+    Programação Web
+    Prof. Orlewilson Maia
+    Aluno (a): seu nome (digite seu nome:))
+    Data: 30/04/2020
+    Descrição: Estilos que serão aplicados na página 
+               para cadastro de informações.
+*/
+
+/* https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/Forms/Form_validation */
+
+body {
+    background-color: white;
+}
+
+label {
+    font-family: Arial;
+    font-style: normal;
+    font-size: 12px;
+    color: black;
+}
+
+#titulo {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: blue;
+}
+
+.item-formulario {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 12px;
+    color: black;
+}
+
+input[type=text] {     
+    padding: 4px 8px;
+    background-color: white;
+    border-color: black;
+}
+
+input:focus {
+    background-color: lightblue;
+    color: black;
+    outline: 2px solid blue;  
+}
+
+input[type=text]:focus:invalid {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    outline: 2px solid lightpink;  
+}
+
+input:invalid {
+    border-color: #900;
+    background-color: #FDD;
+}
+
+input:valid {     
+    padding: 4px 8px;
+    background-color: white;
+    border-color: black;
+}
+
+img {
+    text-align: left; 
+    height: 100px;
+}
+
+div {
+    text-align:center;
+}
